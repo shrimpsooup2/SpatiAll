@@ -1,0 +1,10 @@
+{
+  "sources": [
+    "drums",
+    "bass",
+    "other",
+    "vocals"
+  ],
+  "samplerate": 44100,
+  "segment": 176128
+}

@@ -1,0 +1,32 @@
+#include <winresrc.h>
+
+// Embedded manifest (the linker's own manifest generation must be off: /MANIFEST:NO).
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "spatiall.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Spatiall"
+            VALUE "FileDescription", "Spatiall - spatial audio for headphones"
+            VALUE "FileVersion", "0.1.0"
+            VALUE "InternalName", "Spatiall"
+            VALUE "OriginalFilename", "Spatiall.exe"
+            VALUE "ProductName", "Spatiall"
+            VALUE "ProductVersion", "0.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
